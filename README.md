@@ -160,7 +160,7 @@ that increases clarity or reduces filesize without obfuscating.
 
 ```javascript
 "use strict";
-var is_thenable = function (P) { return P!=null && typeof(P.then)==='function' }
+var is_thenable = function (P) { return P && typeof(P.then)==='function' }
 
 var maxPromiseId = 0;
 
