@@ -156,7 +156,7 @@ Sourcecode
 
 Because this is intended to be read, the source code is included below in
 the documentation. Bug fixes, obviously, would be welcome. As would any change
-that increases clarity or reduces filesize with obfuscating.
+that increases clarity or reduces filesize without obfuscating.
 
 ```javascript
 "use strict";
