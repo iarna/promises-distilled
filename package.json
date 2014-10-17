@@ -1,0 +1,23 @@
+{
+  "name": "promises-distilled",
+  "description": "Super simple A+ style promises for the purposes of code reading",
+  "version": "1.0.0",
+  "dependencies": {},
+  "main": "index.js",
+  "scripts": {
+    "test": "make ; tape $(find test -name '*.js')",
+    "prepublish": "perl -e'$a=qx{cat README.md};$a=~s{(```javascript\\n).*?(\\n```)}{$1.qx{cat index.js}.$2}se;print $a' > README.md.new && mv README.md.new README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iarna/promises-distilled.git"
+  },
+  "devDependencies": {
+    "bluebird": "^2.3.5",
+    "q": "^1.0.1",
+    "rsvp": "^3.0.14",
+    "tape": "^3.0.0",
+    "when": "^3.5.0"
+  },
+  "license": "ISC"
+}
