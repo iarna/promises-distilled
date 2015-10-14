@@ -48,8 +48,8 @@ means that:
 
 Will print 13 and then 23.
 
-Using Promisables
------------------
+Using Promises
+--------------
 
     var promise = new Promise(function(fulfill, reject){
         fs.readdir('/', function(E,V){ E ? reject(E) : fulfill(V) });
