@@ -59,7 +59,7 @@ Using Promises
 So imagine we have the promise from above:
 
     promise.then(function(files) {
-        return Promisable(function(resolve){ fs.unlink(files[0], resolve.withoutErrors) });
+        return new Promise(function(resolve){ fs.unlink(files[0], resolve.withoutErrors) });
     })
     .then(function() {
         // do more things
