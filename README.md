@@ -92,7 +92,7 @@ API Guide
 
     var Promise = require('promises-distilled');
 
-### `new Promise( resolvercb ) -> Promise`
+### `new Promise(resolvercb) -> Promise`
 
 Arguments:
 
